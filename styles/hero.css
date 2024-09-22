@@ -41,8 +41,7 @@
 }
 
 #book_backgorund {
-  background: url("../assets/images/hero-background.png") bottom/cover,
-    radial-gradient(var(--shape-background) 0%, #13081b 100%);
+  background: url("../assets/images/hero-background.png") bottom/cover;
   opacity: 0;
 
   animation: appear 2s ease-in both;

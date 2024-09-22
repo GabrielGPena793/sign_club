@@ -1,0 +1,80 @@
+#description {
+  max-width: 75rem;
+  text-align: center;
+  padding-block: 6rem 5.72rem;
+
+  & p {
+    font: var(--subtitle);
+    color: var(--text-body);
+
+    & span {
+      opacity: 0.5;
+
+      & strong {
+        color: var(--blue-light);
+        font-weight: bold;
+      }
+    }
+  }
+
+  & div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & img {
+    opacity: 0;
+    scale: 0;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      rotate: 15deg;
+      scale: 1.1;
+    }
+  }
+
+  &:hover {
+    & img:nth-child(1) {
+      animation: apper-scale 1s ease-in-out both;
+    }
+
+    & div img:nth-child(1) {
+      animation: apper-scale 2s 1000ms ease-in-out both;
+    }
+
+    & div img:nth-child(2) {
+      animation: apper-scale 3s 2000ms ease-in-out both;
+    }
+
+    & p {
+      & .text-appear-first {
+        animation: appear-text 1s ease both;
+      }
+
+      & .text-appear-second {
+        animation: appear-text 1s 1000ms ease both;
+      }
+
+      & .text-appear-third {
+        animation: appear-text 1s 2000ms ease both;
+      }
+    }
+  }
+}
+
+@keyframes apper-scale {
+  50% {
+    scale: 1.05;
+  }
+
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes appear-text {
+  to {
+    opacity: 1;
+  }
+}
