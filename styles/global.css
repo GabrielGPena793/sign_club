@@ -45,3 +45,25 @@
   --link-text: 400 0.875rem var(--ff-base);
   --tag-text: 700 0.625rem var(--ff-base);
 }
+
+body {
+  background-color: var(--shape-background);
+}
+
+a {
+  text-decoration: none;
+}
+
+.mobile_only {
+  display: none;
+}
+
+@media (width < 80em) {
+  .desktop_only {
+    display: none;
+  }
+
+  .mobile_only {
+    display: inline-block;
+  }
+}
