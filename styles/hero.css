@@ -1,0 +1,55 @@
+#hero {
+  text-align: center;
+  padding-top: 9rem;
+  padding-bottom: 29.375rem;
+
+  & h1 {
+    max-width: 41rem;
+    margin: auto;
+    margin-bottom: 2rem;
+
+    font: var(--title-lg);
+    color: var(--text-title);
+
+    opacity: 0;
+    animation: appear 2s ease-in both;
+  }
+
+  & p {
+    max-width: 35.5rem;
+    margin: auto;
+
+    font: var(--body-lg);
+    color: var(--text-body);
+
+    opacity: 0;
+    animation: appear 2s 400ms ease-in both;
+  }
+
+  @media (width < 80em) {
+    padding-top: 3rem;
+    padding-bottom: 12.0625rem;
+
+    & h1 {
+      font: var(--title-sm);
+    }
+
+    & p {
+      font: var(--link-text);
+    }
+  }
+}
+
+#book_backgorund {
+  background: url("../assets/images/hero-background.png") bottom/cover,
+    radial-gradient(var(--shape-background) 0%, #13081b 100%);
+  opacity: 0;
+
+  animation: appear 2s ease-in both;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
