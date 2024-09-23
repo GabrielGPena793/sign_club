@@ -60,6 +60,16 @@
       }
     }
   }
+
+  @media (width < 80em) {
+    & p {
+      font: var(--body-md);
+    }
+
+    & img {
+      width: 2.5rem;
+    }
+  }
 }
 
 @keyframes apper-scale {
