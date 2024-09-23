@@ -1,0 +1,94 @@
+#monthly_kit {
+  margin-bottom: 17.375rem;
+
+  & header {
+    margin-bottom: 5.5rem;
+    text-align: center;
+
+    & div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & h2 {
+        font: var(--title-sm);
+        color: var(--text-title);
+      }
+
+      & img {
+        width: 4rem;
+      }
+    }
+
+    & p {
+      font: var(--body-md);
+      color: var(--text-body);
+
+      margin-top: -10px;
+    }
+  }
+
+  & .book_plan_container {
+    height: 57.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      position: absolute;
+      transition: all 0.5s ease;
+    }
+
+    & img:nth-child(1) {
+      width: 29.1875rem;
+      height: 38.5625rem;
+      z-index: 1;
+    }
+
+    & img:nth-child(2) {
+      width: 15.875rem;
+      height: 4.6875rem;
+    }
+
+    & img:nth-child(3) {
+      z-index: 0;
+    }
+
+    & img:nth-child(4) {
+      z-index: -1;
+    }
+
+    & img:nth-child(5) {
+      width: 18.8125rem;
+      height: 24.75rem;
+    }
+
+    & img:nth-child(6) {
+      width: 18.8125rem;
+      height: 24.75rem;
+    }
+
+    &:hover {
+      & img:nth-child(2) {
+        transform: translateY(-330px) translateX(-320px);
+      }
+
+      & img:nth-child(3) {
+        transform: translateY(-120px) translateX(280px);
+      }
+
+      & img:nth-child(4) {
+        transform: translateY(-18px) translateX(400px);
+      }
+
+      & img:nth-child(5) {
+        transform: translateY(360px) translateX(286px);
+      }
+
+      & img:nth-child(6) {
+        transform: translateY(170px) translateX(-280px);
+      }
+    }
+  }
+}
