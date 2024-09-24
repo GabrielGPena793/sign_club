@@ -92,6 +92,8 @@
   }
 
   @media (width < 80em) {
+    margin-bottom: 5.5rem;
+
     & header {
       margin-bottom: 4rem;
 

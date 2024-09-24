@@ -48,6 +48,7 @@
 
 body {
   background: radial-gradient(var(--shape-background) 0%, #13081b 100%);
+  overflow-x: hidden;
 }
 
 a {
