@@ -26,8 +26,7 @@
       border: 1px solid var(--shape-stroke);
       border-radius: 24px;
       max-width: 18rem;
-      transition: background 0.5s ease, box-shadow 0.5s ease,
-        transform 300ms ease;
+      transition: all 0.5s ease;
 
       & img[src*="habbit"] {
         position: absolute;
@@ -159,6 +158,10 @@
 
     & .card:nth-child(1) {
       z-index: 1;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
     }
 
     & .card:nth-child(2),
@@ -195,10 +198,18 @@
     &:hover {
       & .card:nth-child(2) {
         transform: translateY(80px) translateX(-290px) rotate(-8deg);
+
+        &:hover {
+          transform: translateY(70px) translateX(-290px) rotate(-8deg);
+        }
       }
 
       & .card:nth-child(3) {
         transform: translateY(80px) translateX(290px) rotate(8deg);
+
+        &:hover {
+          transform: translateY(70px) translateX(290px) rotate(8deg);
+        }
       }
     }
   }
