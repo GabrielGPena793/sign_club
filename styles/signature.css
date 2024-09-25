@@ -228,7 +228,8 @@
       width: 100%;
       gap: 1rem;
       overflow-x: scroll;
-      scroll: hidden;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
       justify-content: start;
 
       & .card {
