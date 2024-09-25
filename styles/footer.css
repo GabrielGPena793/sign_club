@@ -75,7 +75,7 @@ footer {
 #footer_background {
   width: 100vw;
   background: url("../assets/images/book-trace-background.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @media (width < 80em) {
     margin-top: 6.5rem;
